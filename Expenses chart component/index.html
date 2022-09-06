@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.used.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Expenses chart</title>
+</head>
+<body>
+
+    <div class="bg-secondary active"></div>
+    
+    <div class="container w-100 justify-content-center align-items-center">
+        <div class="expenses-container">
+            <div class="expenses-info w-100 d-flex justify-content-between align-items-center rounded-4 py-4 bg-primary text-white shadow">
+                <div class="right-side">
+                    <span class="subtitle-white">My balance</span>
+                    <h4 class="balance text-white">$921.48</h4>
+                </div>
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="expenses w-100 mt-3 rounded-4 py-4 bg-white shadow">
+                <h4 class="sepending mb-3">Spending - Last 7 days</h4>
+                <div class="graphic d-flex align-items-end border-bottom pb-4 mb-4">
+                    <div class="monday rounded text-center" spend-price="15.04">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">mon</div>
+                    </div>
+                    <div class="tuesday rounded text-center" spend-price="33.05">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">tue</div>
+                    </div>
+                    <div class="wednesday rounded text-center" spend-price="52.36">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">wed</div>
+                    </div>
+                    <div class="thursday rounded text-center" spend-price="31.07">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">thu</div>
+                    </div>
+                    <div class="friday rounded text-center" spend-price="18.21">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">fri</div>
+                    </div>
+                    <div class="saturday rounded text-center" spend-price="44.20">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">sat</div>
+                    </div>
+                    <div class="sunday rounded text-center" spend-price="35.78">
+                        <div class="money bg-dark text-white rounded mb-1 fw-bold"></div>
+                        <div class="bar bg-primary rounded-1"></div>
+                        <div class="subtitle text-lowercase">sun</div>
+                    </div>
+                </div>
+                <div class="total-month w-100 d-flex justify-content-between align-items-center rounded mt-3">
+                    <div class="right-side">
+                        <div class="subtitle">Total this month</div>
+                        <h1 class="total-price">$478.33</h1>
+                    </div>
+                    <div class="left-side text-end">
+                        <div class="fw-semibold added">+2.4%</div>
+                        <div class="subtitle text-lowercase">from last month</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
